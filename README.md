@@ -9,6 +9,7 @@ using the `net` command, e.g.,
 net from https://raw.githubusercontent.com/SSlab-econ/SSSlab_stata/master/ado          
 net install preliminaries,             replace
 net install loadglob,                  replace
+```
 
 ## License
 
