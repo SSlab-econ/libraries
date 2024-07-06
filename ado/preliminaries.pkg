@@ -1,0 +1,12 @@
+d SSlab_stata: ado
+d
+d Author of original script: CJ Verbeck
+d Source: https://github.com/gslab-econ/gslab_stata
+d
+d Modifications: Jörg Spenkuch
+d
+d preliminaries: Command to set preliminaries for do files
+d
+f preliminaries.ado
+f preliminaries.hlp
+e
