@@ -1,2 +1,3 @@
 p loadglob              Define global variables based on an input file
 p preliminaries         Command to set preliminaries for do files
+p runtimestamp         	Command display system parameters and record the date and time

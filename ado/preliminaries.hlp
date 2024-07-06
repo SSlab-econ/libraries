@@ -5,7 +5,7 @@ help for ^preliminaries^
 Command to set preliminaries for do files
 -----------------------------------------------------------------------
 
-	^preliminaries^ , [version(^string^) ^matsize(^integer^)^ ^maxvar(^integer^)^ ^sortseed(^integer^)^ ^seed(^integer^)^ ^linesize(^string^)^ ^loadglob(^list of files^)^]
+	^preliminaries^ , [^matsize(^integer^)^ ^maxvar(^integer^)^ ^sortseed(^integer^)^ ^seed(^integer^)^ ^linesize(^string^)^ ^loadglob(^list of files^)^ ^maxmem(^string^)^]
 
 
 Description
@@ -16,8 +16,6 @@ Description
 
 Options for use with ^preliminaries^
 ---------------------------
-
-version(^string^) is optional. It specifies the version number to which command interpreter is set.
 
 ^matsize(^integer^)^ is optional. It specifies the maximum number of variables that can be included 
 	in any of Stata's estimation commands for the do file. Defaults to 5000.
@@ -36,6 +34,8 @@ version(^string^) is optional. It specifies the version number to which command 
 
 ^loadglob(^list of files^)^ is optional. It solicits a space-delimited list of files from which to
 	extract global variables using loadglob.ado. 
+	
+^maxmem(^string^)^ is optional. It sets the maximum amount of RAM Stata is allowed to use, which (as of version 18.5) is strongly suggested for Linux environments.
 
 Examples
 --------
