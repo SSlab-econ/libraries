@@ -1,8 +1,8 @@
 d SSlab_stata: ado
 d
-d Author: Jörg Spenkuch
+d Author: JÃ¶rg Spenkuch
 d
 d preliminaries: Command to record the date and time
 d
-f finishstamp.ado
+f timestamp.ado
 e
