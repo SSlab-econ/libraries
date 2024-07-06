@@ -24,7 +24,7 @@ program define startstamp
 	local hostname : env HOSTNAME
 	if !mi("`hostname'") di "Hostname:      `hostname'"
 	di ""
-	di "Stata version control: c(version)"
+	di "Stata version control: `c(version)'"
 	
 	di "{hline `=min(79, c(linesize))'}"
 end
