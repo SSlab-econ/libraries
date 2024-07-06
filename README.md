@@ -9,7 +9,7 @@ using the `net` command, e.g.,
 net from https://raw.githubusercontent.com/SSlab-econ/SSlab_stata/master/ado          
 net install preliminaries,             replace
 net install loadglob,                  replace
-net install runtimestamp,              replace
+net install startstamp,                replace
 ```
 
 ## Sources and License
