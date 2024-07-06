@@ -22,7 +22,7 @@ program define preliminaries
  
     quietly{
         
-        syntax , [VERsion(string) matsize(string) maxvar(string) sortseed(string) linesize(string) loadglob(string) seed(string) maxmem(string)]  
+        syntax , [matsize(string) maxvar(string) sortseed(string) linesize(string) loadglob(string) seed(string) maxmem(string)]  
     
         if "`sortseed'"==""{
             local sortseed 42
@@ -48,6 +48,7 @@ program define preliminaries
         
         clear all
         
+        set max_memory `maxmem'
         set matsize `matsize'
         set linesize `linesize'
         set maxvar `maxvar'
@@ -59,8 +60,7 @@ program define preliminaries
                 loadglob using `globfile'
             }
         }
-        
-        version `version'
+
     }
     
     
