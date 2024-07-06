@@ -9,10 +9,14 @@ using the `net` command, e.g.,
 net from https://raw.githubusercontent.com/SSlab-econ/SSlab_stata/master/ado          
 net install preliminaries,             replace
 net install loadglob,                  replace
+net install runtimestamp,              replace
 ```
 
-## License
+## Sources and License
 
-The preliminaries.ado and loadglob.ado files are slightly modified from [gslab-econ/gslab_stata](https://github.com/gslab-econ/gslab_stata). We are responsible for all limitations these changes produce.
+- preliminaries.ado and loadglob.ado files are slightly modified from [gslab-econ/gslab_stata](https://github.com/gslab-econ/gslab_stata). 
+- startstamp.ado is based on code from [reifjulian/my-project](https://github.com/reifjulian/my-project).
 
-The remaining portion of this work is licensed under the MIT license.
+We are responsible for all limitations that any changes to the orginal code produce.
+
+The remaining portion of this repo is licensed under the MIT license.

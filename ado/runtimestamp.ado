@@ -1,6 +1,6 @@
  /**********************************************************
  *
- *  RUNTIMESTAMP.ADO: dispalay system parameters and record the date and time
+ *  STARTSTAMP.ADO: dispalay system parameters and record the date and time
  * 
  *
  *  Based on: https://github.com/reifjulian/my-project
@@ -9,7 +9,7 @@
  
 version 18
 
-program define runtimestamp 
+program define startstamp 
 	di "{hline `=min(79, c(linesize))'}"
 
 	di "Date and time: $S_DATE $S_TIME"
