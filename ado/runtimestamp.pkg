@@ -5,7 +5,7 @@ d Source: https://github.com/reifjulian/my-project
 d
 d Modifications: Jörg Spenkuch
 d
-d preliminaries: Command dispalay system parameters and record the date and time
+d preliminaries: Command display system parameters and record the date and time
 d
 f runtimestamp.ado
 e
