@@ -7,5 +7,5 @@ d Modifications: Jörg Spenkuch
 d
 d preliminaries: Command to display system parameters and record the date and time
 d
-f runtimestamp.ado
+f startstamp.ado
 e
