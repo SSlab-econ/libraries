@@ -48,6 +48,8 @@ program define preliminaries
         
         clear all
         
+        set logtype text
+        
         set max_memory `maxmem'
         set matsize `matsize'
         set linesize `linesize'
