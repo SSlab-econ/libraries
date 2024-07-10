@@ -22,7 +22,14 @@ program define preliminaries
  
     quietly{
         
-        syntax , [matsize(string) maxvar(string) sortseed(string) linesize(string) loadglob(string) seed(string) maxmem(string)]  
+        syntax , [matsize(string) ///
+                  maxvar(string) ///
+                  sortseed(string) ///
+                  linesize(string) ///
+                  loadglob(string) ///
+                  seed(string) ///
+                  maxmem(string) ///
+                  localpackages(numlist max=1 integer >=0 <=1)]  
     
         if "`sortseed'"==""{
             local sortseed 42
@@ -44,6 +51,9 @@ program define preliminaries
         }
         if "`version'"==""{
             local version "18.0"
+        }
+        if "`localpackages'"=="" | "`localpackages'"=="1" {
+            uselocalpackages
         }
         
         clear all

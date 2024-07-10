@@ -1,0 +1,8 @@
+d SSlab_stata: ado
+d
+d Author: Jörg Spenkuch
+d
+d uselocalpackages: Forces Stata to only use base packages and packages that are in ./src/lib/Stata
+d
+f uselocalpackages.ado
+e
