@@ -9,11 +9,15 @@
 
 program autofill
 	syntax, value(str) commandname(str) outfile(str) [append(int 1 >=0 <=1) mode(str)]
-	if "`append'" == "append" {
+	if "`append'" == "1" {
 	    file open f using "`outfile'", write append	
 	}
-	else {
+	else "`append'" == "0" {
 	    file open f using "`outfile'", write replace	
+	}
+	else {
+	    di as err "append must be 0 or 1"
+	    exit
 	}
     if "`mode'" == "text" {			
 		file write f "\newcommand{\\`commandname'}{\textnormal{`value'}}" _n
