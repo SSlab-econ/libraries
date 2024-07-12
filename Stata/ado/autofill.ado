@@ -8,7 +8,7 @@
  **********************************************************/
 
 program autofill
-	syntax, value(str) commandname(str) outfile(str) [append(str) mode(str)]
+	syntax, value(str) commandname(str) outfile(str) [append(int 1 >=0 <=1) mode(str)]
 	if "`append'" == "append" {
 	    file open f using "`outfile'", write append	
 	}

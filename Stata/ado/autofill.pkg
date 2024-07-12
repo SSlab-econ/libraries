@@ -1,4 +1,4 @@
-d gslab_stata: gslab_misc
+d modified from gslab_stata: gslab_misc
 d
 d
 d autofill: facilitates exporting values as TeX macros.

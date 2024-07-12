@@ -1,6 +1,6 @@
 {smcl}
 
-{* *! version 16.0 13jul2022}{...}
+{* *! modified from version 16.0 13jul2022}{...}
 
 {p2col:{bf:autofill}}Export autofill values
 
@@ -34,7 +34,7 @@
 
 {phang}{opt outfile(str)} is required, it gives the file into which you would like to export.
 
-{phang}{opt append(str)} is optional, write "append" if you would like to append to an existing file.
+{phang}{opt append(int 0 1)} is optional, write "1" if you would like to append to an existing file.
 
 {phang}{opt mode(str)} is optional, writing "text" will add \textnormal to the macro.
 
