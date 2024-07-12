@@ -12,7 +12,7 @@ program autofill
 	if "`append'" == "1" {
 	    file open f using "`outfile'", write append	
 	}
-	else "`append'" == "0" {
+	else if "`append'" == "0" {
 	    file open f using "`outfile'", write replace	
 	}
 	else {
