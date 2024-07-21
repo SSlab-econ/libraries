@@ -10,21 +10,23 @@
 version 18
 
 program define startstamp 
-	di "=== SYSTEM DIAGNOSTICS ==="
+	di "=== RUNTIME INFORMATION ==="
 
-	di "Date and time: $S_DATE $S_TIME"
+	di "Timestamp:       $S_DATE $S_TIME"
 	di ""
-	di "Stata version: `c(stata_version)'"
-	di "Updated as of: `c(born_date)'"
-	di "Variant:       `=cond( c(MP),"MP",cond(c(SE),"SE",c(flavor)) )'"
-	di "Processors:    `c(processors)'"
+	di "Stata version:   `c(stata_version)'"
+	di "Updated as of:   `c(born_date)'"
+	di "Variant:         `=cond( c(MP),"MP",cond(c(SE),"SE",c(flavor)) )'"
+	di "Processors:      `c(processors)'"
 	di ""
-	di "OS:            `c(os)' `c(osdtl)'"
-	di "Machine type:  `c(machine_type)'"
+	di "OS:              `c(os)' `c(osdtl)'"
+	di "Machine type:    `c(machine_type)'"
 	local hostname : env HOSTNAME
 	if !mi("`hostname'") di "Hostname:      `hostname'"
 	di ""
 	di "Version control: `c(version)'"
+	di ""
+	di "CLI arguments:   `=cond("`0'"!="", "`0'", "none")'"
 	
-	di "=========================="
+	di "==========================="
 end
