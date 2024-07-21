@@ -9,10 +9,11 @@
  
 version 18
 
-program define startstamp, [cli(str)]
+program define startstamp
+	syntax , [cli(str)]
 
 	* strip all quotes from arguments
-    local cargs : subinstr local `cli' `"""' "", all
+    local cargs : subinstr local cli `"""' "", all
 
 	di "=== RUNTIME INFORMATION ==="
 
