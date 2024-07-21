@@ -9,7 +9,11 @@
  
 version 18
 
-program define startstamp 
+program define startstamp, [cli(str)]
+
+	* strip all quotes from arguments
+    local cargs : subinstr local `cli' `"""' "", all
+
 	di "=== RUNTIME INFORMATION ==="
 
 	di "Timestamp:       $S_DATE $S_TIME"
@@ -26,7 +30,7 @@ program define startstamp
 	di ""
 	di "Version control: `c(version)'"
 	di ""
-	di "CLI arguments:   `=cond("`0'"!="", "`0'", "none")'"
+	di "CLI arguments:   `=cond("`cargs'"!="", "`cargs'", "none")'"
 	
 	di "==========================="
 end
