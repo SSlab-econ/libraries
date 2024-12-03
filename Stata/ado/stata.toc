@@ -5,3 +5,4 @@ p timestamp         	Command display system record the date and time
 p uselocalpackages		Command to force Stata to use locally installed packages
 p save_data						Custom version of Stata's save command
 p autofill						Command for exporting TeX macros
+p ebayes              Performs empirical Bayes shrinkage estimation
