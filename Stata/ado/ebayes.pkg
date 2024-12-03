@@ -1,0 +1,10 @@
+d SSlab_stata: ado
+d
+d Author: Adam Sacarny
+d Source: http://www.sacarny.com/programs/
+d
+d ebayes: Empirical Bayes shrinkage estimator based on Morris (1983)
+d
+f ebayes.ado
+f ebayes.sthlp
+e
